@@ -1,0 +1,68 @@
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "The Year of The Camel Regular";
+  src: url("/fonts/TheYearofTheCamel-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "The Year of The Camel Medium";
+  src: url("/fonts/TheYearofTheCamel-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "The Year of The Camel Bold";
+  src: url("/fonts/TheYearofTheCamel-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "The Year of The Camel ExtraBold";
+  src: url("/fonts/TheYearofTheCamel-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "The Year of The Camel ExtraLight";
+  src: url("/fonts/TheYearofTheCamel-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+}
+
+@theme {
+  --font-sans: "The Year of The Camel", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+*{
+  font-family: "The Year of The Camel Regular", sans-serif;
+}
+
+@theme {
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 187.5rem;
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-avocado-200: oklch(0.98 0.04 113.22);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-avocado-400: oklch(0.92 0.19 114.08);
+  --color-avocado-500: oklch(0.84 0.18 117.33);
+  --color-avocado-600: oklch(0.53 0.12 118.34);
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+  /* ... */
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+.ExtraBold {
+  font-family: "The Year of The Camel ExtraBold", sans-serif;
+}
